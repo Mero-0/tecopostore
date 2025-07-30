@@ -1,13 +1,32 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TecopoStore
 
-Currently, two official plugins are available:
+Proyecto desarrollado con React, TypeScript y Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instrucciones para correr el proyecto localmente
 
-## Expanding the ESLint configuration
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/Mero-0/tecopostore.git
+   cd tecopostore
+   ```
+2. Instala las dependencias:
+   ```sh
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```sh
+   npm run dev
+   ```
+4. Abre tu navegador en [http://localhost:5173](http://localhost:5173) (o la URL que indique la terminal).
+
+## URL de la aplicación desplegada
+
+- [Enlace a la app desplegada](https://tecopostore.vercel.app/)
+
+---
+
+## Expansión de la configuración ESLint
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
