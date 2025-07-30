@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { getProducts } from '../api/products';
 import ProductCard from '../components/ProductCard';
 import type { Product } from '../types/product';
 
@@ -12,10 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const url = category === 'all'
-          ? 'https://fakestoreapi.com/products'
-          : `https://fakestoreapi.com/products/category/${category}`;
-        const { data } = await axios.get<Product[]>(url);
+        const data = await getProducts(category);
         setProducts(data);
       } catch (error) {
         console.error('Error fetching products:', error);

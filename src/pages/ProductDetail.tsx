@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import axios from 'axios';
+import { getProductById } from '../api/products';
 import { useCart } from '../context/CartContext';
 import type { Product } from '../types/product';
 
@@ -13,7 +13,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const { data } = await axios.get<Product>(`https://fakestoreapi.com/products/${id}`);
+        const data = await getProductById(id);
         setProduct(data);
       } catch (error) {
         console.error('Error fetching product:', error);
