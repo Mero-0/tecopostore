@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="bg-blue-600 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold flex items-center gap-2">
-          <img src="/public/icon.png" alt="Tecopos Logo" className="h-10 w-10 rounded-full" />
+          <img src="/public/tecoposicon2.webp" alt="Tecopos Logo" className="h-10 w-10 rounded-full" />
           <span>TecoShop</span>
         </Link>
         <div className="flex items-center gap-4">
